@@ -1,0 +1,57 @@
+<div class="container">
+<div class="container-fluid">
+  <h1 class="titlee">Moja prva forma</h1>
+  <form #userForm="ngForm">
+
+    <div class="form-group"style="width: 50%; margin-left:25%">
+      <label>Name</label>
+      <input type="text" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched" class="form-control" name="userName" [ngModel]="userModel.name">
+    </div>
+
+
+
+    <div class="form-group" style="width: 50%; margin-left:25%">
+        <label>E-mail</label>
+        <input type="email" class="form-control" name="email" [ngModel]="userModel.email">
+      </div>
+
+      <div class="form-group"style="width: 50%; margin-left:25%">
+          <label>Phone</label>
+          <input type="tel" class="form-control" name="phone" [ngModel]="userModel.phone">
+        </div>
+
+        <div class="form-group"style="width: 50%; margin-left:25%">
+          <select class="custom-select" name="topic" ngModel="userModel.topic">
+            <option selected value="">I am interested in</option>
+          
+            <option *ngFor="let topic of topics">{{ topic }}</option>
+          </select>
+        </div>
+
+        <div class="mb-3"style="width: 50%; margin-left:25%">
+          <label>Time preference</label>
+        </div>
+
+          <div class="form-check"style="width: 50%; margin-left:25%">
+            <input class="form-check-input" [ngModel]="userModel.subscribe" type="radio" name="timePreference" value="morning">
+            <label class="form-check-label">Morning(9AM-12AM)</label>
+          </div>
+            
+            <div class="form-check"style="width: 50%; margin-left:25%">
+              <input class="form-check-input" [ngModel]="userModel.subscribe" type="radio" name="TimePreference" value="evening">
+              <label class="form-check-label">Evening(5PM - 8PM)</label>
+            </div>
+            
+            <div class="form-check mb-3"style="width: 50%; margin-left:25%">
+              <input class="form-check-input" name="subscribe" ngModel type="checkbox">
+              <label class="form-check-label">
+                Send me promotional offers
+              </label>
+           </div>
+            
+           
+           <button class="btn btn-primary" style="width: 50%; margin-left:25%" type="submit">Submit form</button>
+      
+  </form>
+  </div>
+  </div>
