@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginAuthService} from '../login-auth.service';
+import {UserService} from '../user.service';
+
 
 @Component({
   selector: 'app-userdashboard',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserdashboardComponent implements OnInit {
 
-  constructor() { }
+  public loginuser: any = {};
+  public user: any = {};
+  userService: any;
+  
+
+  constructor(private authService: LoginAuthService, private userservice: UserService) 
+  { 
+    this.authService.isLoggedIn();
+    this.loginuser = JSON.parse(localStorage.getItem('currentUser'));
+  }
 
   ngOnInit() {
+    this.userService.getUser(this.loginuser.token).subscribe(user =>
+      {
+        this.user= user;
+      }, err => {
+        console.log(err);
+      })
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
+import { LoginAuthService } from '../login-auth.service';
 
 
 
@@ -12,7 +13,9 @@ export class SignupComponent implements OnInit {
 
   public user: any = {};
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private authService: LoginAuthService) { 
+    this.authService.isLoggedIn();
+  }
 
   ngOnInit() {
   }

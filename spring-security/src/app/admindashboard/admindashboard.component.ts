@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginAuthService} from '../login-auth.service';
+import {UserService} from '../user.service';
 
 @Component({
   selector: 'app-admindashboard',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmindashboardComponent implements OnInit {
 
-  constructor() { }
+  public loginuser: any = {};
+  public users: any = [];
+
+  constructor(private authService: LoginAuthService, private userService: UserService) 
+  { 
+    this.authService.isLoggedIn();
+    this.loginuser = JSON.parse(localStorage.getItem('currentUser'));
+  }
 
   ngOnInit() {
+    this.userService.getAllUsers(this.loginuser.token).subscribe(users =>
+    {
+      this.users= users;
+    })
   }
 
 }

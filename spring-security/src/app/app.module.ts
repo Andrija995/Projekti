@@ -9,9 +9,14 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { UserdashboardComponent } from './userdashboard/userdashboard.component';
 
+
+import {LoginAuthService} from './login-auth.service'
+
 import {FormsModule} from '@angular/forms';
 import {UserService} from './user.service';
 import {HttpClientModule} from '@angular/common/http';
+import { AuthGuard } from 'auth.guard';
+import { from } from 'rxjs';
 
 
 @NgModule({
@@ -31,7 +36,9 @@ import {HttpClientModule} from '@angular/common/http';
  
   ],
   providers: [
-    UserService
+    UserService,
+    AuthGuard,
+    LoginAuthService
   ],
   bootstrap: [AppComponent]
 })
