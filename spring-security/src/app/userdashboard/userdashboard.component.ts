@@ -10,9 +10,11 @@ import {UserService} from '../user.service';
 })
 export class UserdashboardComponent implements OnInit {
 
+  
   public loginuser: any = {};
   public user: any = {};
-  userService: any;
+  
+    
   
 
   constructor(private authService: LoginAuthService, private userservice: UserService) 
@@ -22,7 +24,7 @@ export class UserdashboardComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.userService.getUser(this.loginuser.token).subscribe(user =>
+    this.userservice.getUser(this.loginuser.token).subscribe(user =>
       {
         this.user= user;
       }, err => {

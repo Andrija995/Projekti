@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { HttpHeaders, HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 
@@ -13,23 +13,23 @@ export class UserService {
    }
    saveUser(user: any): Observable <any>{
      const headers = new HttpHeaders({'Access-Control-Allow-Origin': '*'});
-     return this.http.post("http://localhost:8080/registration", user, {headers});
+     return this.http.post("http://192.168.0.9:8080/registration", user, {headers: headers});
 
    }
    loginUser(user: any): Observable <any>{
     const headers = new HttpHeaders({'Access-Control-Allow-Origin': '*'});
-    return this.http.post("http://localhost:8080/login", user, {headers});
+    return this.http.post("http://192.168.0.9:8080/login", user, {headers: headers});
 
    }
-   getAllUsers(token: any): Observable <any>{
-    const headers = new HttpHeaders({'Authorization': 'Bearer'+token});
-    return this.http.get("http://localhost:8080/users", {headers:headers});
+   getAllUsers(token: any): Observable<any>{
+    const headers = new HttpHeaders({'Authorization': 'Bearer '+token});
+    return this.http.get("http://192.168.0.9:8080/users", {headers: headers});
 
    }
 
-   getUser(token: any): Observable <any>{
-    const headers = new HttpHeaders({'Authorization': 'Bearer'+token});
-    return this.http.get("http://localhost:8080/getuser", {headers:headers});
+   getUser(token: any): Observable<any>{
+    const headers = new HttpHeaders({'Authorization': 'Bearer '+token});
+    return this.http.get("http://192.168.0.9:8080/getuser", {headers: headers});
 
    }
 

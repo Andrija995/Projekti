@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
-import { IfStmt } from '@angular/compiler';
 import{Router} from '@angular/router'
 import {LoginAuthService} from '../login-auth.service';
 

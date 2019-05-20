@@ -1,6 +1,6 @@
 
 <div class="container">
-    <h2>Bordered Table</h2>
+    <h2 style="text-align:center">Podaci o korisniku</h2>
                
     <table class="table table-bordered">
       <thead>
@@ -8,6 +8,7 @@
           <th>Firstname</th>
           <th>Lastname</th>
           <th>Email</th>
+         
           <th>Phone</th>
           <th>Role</th>
           
@@ -16,8 +17,9 @@
       <tbody>
         <tr>
           <td>{{user.firstName}}</td>
-          <td>{{user.lasttName}}</td>
+          <td>{{user.lastName}}</td>
           <td>{{user.email}}</td>
+          
           <td>{{user.phoneNumber}}</td>
           <td>{{user.role}}</td>
         </tr>
