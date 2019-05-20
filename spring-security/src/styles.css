@@ -8,4 +8,22 @@
     color: #4254b9;
 }
 
+.fa {
+    font-size: 2em !important;
+    color: #fff;
+    padding-left: 15px;
+  }
+  form {
+    margin-top: 15%;
+    /*border: 1px solid;*/
+  }
 
+  .border {
+    border: #dbdbdb solid 1px;
+  }
+  table td {
+    color: rgb(28, 48, 48);
+    padding: 10px;
+  }
+
+  

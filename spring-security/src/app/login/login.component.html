@@ -2,7 +2,7 @@
 <div class="container" style="width: 50%; margin-left:25%;">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <form #userForm="ngForm">
+        <form #userForm="ngForm" style="">
         
             <label for="email" style="margin-top:5%">Email</label>
             <input type="text" placeholder="Enter email:" class="form-control" id="email" [(ngModel)]="user.email" name="email">
@@ -14,7 +14,7 @@
             </div>
                    
             <div class="form-group">
-                      <button type="button" class="btn btn-primary" (click)="loginUser(user)"style="margin-left:45%">Login</button>
+                      <button type="button" class="btn btn-primary" (click)="loginUser(user)"style="width: 40%; margin-left:30%;">Login</button>
     
                     </div>
     
