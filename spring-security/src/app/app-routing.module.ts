@@ -6,6 +6,8 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from 'auth.guard';
 import { UserdashboardComponent } from './userdashboard/userdashboard.component';
+import { UpdateComponent } from './update/update.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 export const routes: Routes = [
@@ -14,9 +16,11 @@ export const routes: Routes = [
 {path: 'login', component: LoginComponent},
 
 {path: 'admindashboard', component: AdmindashboardComponent, canActivate: [AuthGuard] },
-{path: 'userdashboard', component: UserdashboardComponent, canActivate: [AuthGuard] },
+{path: 'userdashboard', component: UserdashboardComponent, canActivate: [AuthGuard]},
 
-{path: '**', pathMatch: 'full', redirectTo: 'home'}
+{path: 'update/:id', component: UpdateComponent, canActivate: [AuthGuard]},
+{path: 'profile', component: ProfileComponent},
+{path: '**', pathMatch: 'full', redirectTo: 'home'},
 
 ];
 

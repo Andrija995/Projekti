@@ -17,6 +17,8 @@ import {UserService} from './user.service';
 import {HttpClientModule} from '@angular/common/http';
 import { AuthGuard } from 'auth.guard';
 import { from } from 'rxjs';
+import { UpdateComponent } from './update/update.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { from } from 'rxjs';
     HomeComponent,
     LoginComponent,
     SignupComponent,
-    UserdashboardComponent
+    UserdashboardComponent,
+    UpdateComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
