@@ -8,6 +8,8 @@ import { AuthGuard } from 'auth.guard';
 import { UserdashboardComponent } from './userdashboard/userdashboard.component';
 import { UpdateComponent } from './update/update.component';
 import { ProfileComponent } from './profile/profile.component';
+import { InformacioneTehnologijeComponent } from './informacione-tehnologije/informacione-tehnologije.component';
+import { MehatronikaComponent } from './mehatronika/mehatronika.component';
 
 
 export const routes: Routes = [
@@ -20,6 +22,8 @@ export const routes: Routes = [
 
 {path: 'update/:id', component: UpdateComponent, canActivate: [AuthGuard]},
 {path: 'profile', component: ProfileComponent},
+{path: 'informacione-tehnologije', component: InformacioneTehnologijeComponent},
+{path: 'mehatronika', component:MehatronikaComponent},
 {path: '**', pathMatch: 'full', redirectTo: 'home'},
 
 ];

@@ -19,6 +19,8 @@ import { AuthGuard } from 'auth.guard';
 import { from } from 'rxjs';
 import { UpdateComponent } from './update/update.component';
 import { ProfileComponent } from './profile/profile.component';
+import { InformacioneTehnologijeComponent } from './informacione-tehnologije/informacione-tehnologije.component';
+import { MehatronikaComponent } from './mehatronika/mehatronika.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { ProfileComponent } from './profile/profile.component';
     SignupComponent,
     UserdashboardComponent,
     UpdateComponent,
-    ProfileComponent
+    ProfileComponent,
+    InformacioneTehnologijeComponent,
+    MehatronikaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,21 +1,32 @@
 table{
-    border: 4px solid;
-    border-color: rgb(60, 132, 192)
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 h2{
-    border: 4px solid;
-    border-color: rgb(60, 132, 192);
-    color: rgb(60, 132, 192);
-    font-family: serif
+   
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
     
 }
 td{
-    color:rgb(13, 155, 173);
-    font-style: oblique;
-    font-family: serif
+    border: 1px solid rgb(172, 153, 153);
+    padding: 8px;
+  }
+   
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(219, 80, 110);
+    color: white;
+  }
     
-}
+
 tr{
     color:  rgb(7, 125, 141);
-    font-family: serif
+    font-family: serif;
+    text-align: center
 }
+tr:hover {background-color: rgb(189, 156, 156);}
+tr:nth-child(even){background-color: #f2f2f2;}
