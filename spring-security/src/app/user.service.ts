@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { identifierModuleUrl } from '@angular/compiler';
 
 
@@ -8,6 +8,7 @@ import { identifierModuleUrl } from '@angular/compiler';
   providedIn: 'root'
 })
 export class UserService {
+  
 
   constructor(private http: HttpClient) {
     this.http = http;
@@ -50,4 +51,18 @@ export class UserService {
 
   }
 
+  insert(subject): Observable<any> {
+    const headers = new HttpHeaders({ 'Authorization': 'Bearer ' });
+    return this.http.post("http://192.168.0.9:8080/courses/", subject );
+  }
+  getInsert(): Observable<any> {
+    const headers = new HttpHeaders({ 'Authorization': 'Bearer ' });
+    return this.http.get("http://192.168.0.9:8080/courses/",);
+}
+
+deleteRow(id_course): Observable<any> {
+  const headers = new HttpHeaders({ 'Authorization': 'Bearer ' });
+  return this.http.delete("http://192.168.0.9:8080/courses/" +id_course);
+
+}
 }

@@ -35,141 +35,24 @@
     <th>Semestar</th>
     <th>ESPB</th>
     <th>Izborni/Obavezni</th>
-    <th>Izmeni</th>
+    <th>Brisi</th>
+   
   </tr>
-  <tr>
-    <td>1</td>
-    <td>Matematika</td>
-    <td>1</td>
-    <td>6</td>
-    <td>Obavezan</td>
-    <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-  </tr>
-  <tr>
-        <td>2</td>
-        <td>Informacione Tehnologije</td>
-        <td>1</td>
-        <td>6</td>
-        <td>Obavezan</td>
-        <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-  </tr>
-  <tr>
-      <td>3</td>
-        <td>Uvod u programiranje</td>
-        <td>1</td>
-        <td>6</td>
-        <td>Obavezan</td>
-        <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-  </tr>
-  <tr>
-        <td>4</td>
-        <td>Standardizacija u IT</td>
-        <td>1</td>
-        <td>4</td>
-        <td>Obavezan</td>
-        <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-  </tr>
-  <tr>
-        <td>5</td>
-        <td>Praktikum iz programiranja</td>
-        <td>1</td>
-        <td>4</td>
-        <td>Obavezan</td>
-        <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-  </tr>
-  <tr>
-        <td>6</td>
-        <td>Standardizacija u IT</td>
-        <td>1</td>
-        <td>4</td>
-        <td>Obavezan</td>
-        <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-  </tr>
-  <tr>
-        <td>7</td>
-        <td>Engleski jezik za IT 2a</td>
-        <td>1</td>
-        <td>6</td>
-        <td>Izborni</td>
-        <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
+  <tr *ngFor="let subject of objekat">
+      <td>{{subject.id_course}}</td>
+      <td>{{subject.course_name}}</td>
+      <td>{{subject.semester}}</td>
+      <td>{{subject.espb}}</td>
+      <td>{{subject.is_mandatory}}</td>
+      <td><button class="btn btn-sm btn-outline-danger" (click)="deleteRow(subject.id_course)">Delete</button></td> 
   </tr>
 
-  <tr>
-        <td>7</td>
-        <td>Engleski jezik za IT 2b</td>
-        <td>1</td>
-        <td>6</td>
-        <td>Izborni</td>
-        <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-  </tr>
-
-  <tr>
-        <td>8</td>
-        <td>Matematika 2</td>
-        <td>2</td>
-        <td>6</td>
-        <td>Obavezan</td>
-        <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-      </tr>
-      <tr>
-            <td>9</td>
-            <td>Programski jezici</td>
-            <td>2</td>
-            <td>6</td>
-            <td>Obavezan</td>
-            <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable()">Update</button></td>
-
-      </tr>
-      <tr>
-          <td>10</td>
-            <td>Osnovi racunarske tehnike/td>
-            <td>2</td>
-            <td>6</td>
-            <td>Obavezan</td>
-            <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-      </tr>
-      <tr>
-            <td>11</td>
-            <td>Praktikum iz RA</td>
-            <td>2</td>
-            <td>4</td>
-            <td>Obavezan</td>
-            <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-      </tr>
-      <tr>
-            <td>12</td>
-            <td>Engleski jezik 2a</td>
-            <td>2</td>
-            <td>6</td>
-            <td>Izborni</td>
-            <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-
-      </tr>
-      <tr>
-            <td>13</td>
-            <td>Engleski jezik 2b</td>
-            <td>2</td>
-            <td>6</td>
-            <td>Izborni</td>
-        <td><button class="btn btn-sm btn-outline-danger" (click)="updateTable(user.id)">Update</button></td>
-      </tr>
-    
 
 
 
   
 </table>
+<button class="btn btn-warning" routerLink="/insert-forma" style="width: 20%; margin-left:40%">+ UNESI PREDMET</button>
 </div>
 
 </body>

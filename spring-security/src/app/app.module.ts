@@ -21,6 +21,7 @@ import { UpdateComponent } from './update/update.component';
 import { ProfileComponent } from './profile/profile.component';
 import { InformacioneTehnologijeComponent } from './informacione-tehnologije/informacione-tehnologije.component';
 import { MehatronikaComponent } from './mehatronika/mehatronika.component';
+import { InsertFormaComponent } from './insert-forma/insert-forma.component';
 
 
 @NgModule({
@@ -34,7 +35,9 @@ import { MehatronikaComponent } from './mehatronika/mehatronika.component';
     UpdateComponent,
     ProfileComponent,
     InformacioneTehnologijeComponent,
-    MehatronikaComponent
+    MehatronikaComponent,
+    InsertFormaComponent,
+   
   ],
   imports: [
     BrowserModule,

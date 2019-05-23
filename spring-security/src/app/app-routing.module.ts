@@ -10,6 +10,7 @@ import { UpdateComponent } from './update/update.component';
 import { ProfileComponent } from './profile/profile.component';
 import { InformacioneTehnologijeComponent } from './informacione-tehnologije/informacione-tehnologije.component';
 import { MehatronikaComponent } from './mehatronika/mehatronika.component';
+import { InsertFormaComponent } from './insert-forma/insert-forma.component';
 
 
 export const routes: Routes = [
@@ -24,6 +25,7 @@ export const routes: Routes = [
 {path: 'profile', component: ProfileComponent},
 {path: 'informacione-tehnologije', component: InformacioneTehnologijeComponent},
 {path: 'mehatronika', component:MehatronikaComponent},
+{path: 'insert-forma', component: InsertFormaComponent},
 {path: '**', pathMatch: 'full', redirectTo: 'home'},
 
 ];
