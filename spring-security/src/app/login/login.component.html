@@ -10,9 +10,13 @@
     
           <div class="form-group">
               <label for="password" style="margin-top:5%"></label>
+              
               <input type="password" placeholder="Enter password:" class="form-control" id="password" [(ngModel)]="user.password" name="password">
+              
             </div>
-                   
+                   <div class="form-group">
+                      <small class="mala" href="#">Forgot password?</small>
+                   </div>
             <div class="form-group">
                       <button type="button" class="btn btn-info" (click)="loginUser(user)"style="width: 40%; margin-left:30%;">Login</button>
     

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MehatronikaComponent } from './mehatronika.component';
+import { InformacioneUpdateComponent } from './informacione-update.component';
 
-describe('MehatronikaComponent', () => {
-  let component: MehatronikaComponent;
-  let fixture: ComponentFixture<MehatronikaComponent>;
+describe('InformacioneUpdateComponent', () => {
+  let component: InformacioneUpdateComponent;
+  let fixture: ComponentFixture<InformacioneUpdateComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MehatronikaComponent ]
+      declarations: [ InformacioneUpdateComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MehatronikaComponent);
+    fixture = TestBed.createComponent(InformacioneUpdateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

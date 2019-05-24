@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-informacione-tehnologije',
@@ -11,7 +12,7 @@ export class InformacioneTehnologijeComponent implements OnInit {
     public objekat: any = [];
 
 
-  constructor(private subject: UserService) { }
+  constructor(private subject: UserService, private router: Router) { }
 
   
 
@@ -31,6 +32,9 @@ export class InformacioneTehnologijeComponent implements OnInit {
    
  }
 
-  
+updateRow(id){
+  this.router.navigate(['informacione-update', id])
+}
+
 
 }

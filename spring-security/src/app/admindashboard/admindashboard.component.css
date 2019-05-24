@@ -10,7 +10,7 @@ h2{
     
 }
 td{
-    border: 1px solid rgb(172, 153, 153);
+    border: 1px solid rgb(243, 241, 241);
     padding: 8px;
   }
    
@@ -18,7 +18,7 @@ td{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: rgb(219, 80, 110);
+    background-color: rgb(70, 122, 98);
     color: white;
   }
     
@@ -28,5 +28,5 @@ tr{
     font-family: serif;
     text-align: center
 }
-tr:hover {background-color: rgb(189, 156, 156);}
+tr:hover {background-color: rgb(151, 194, 188);}
 tr:nth-child(even){background-color: #f2f2f2;}

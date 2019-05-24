@@ -18,7 +18,7 @@ td{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: rgb(160, 53, 76);
+    background-color: rgb(32, 150, 124);
     color: white;
   }
     
@@ -28,5 +28,5 @@ tr{
     font-family: serif;
     text-align: center
 }
-tr:hover {background-color: rgb(189, 156, 156);}
+tr:hover {background-color: rgb(172, 195, 218);}
 tr:nth-child(even){background-color: #f2f2f2;}

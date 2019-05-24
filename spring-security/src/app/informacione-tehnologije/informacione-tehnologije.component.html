@@ -36,6 +36,7 @@
     <th>ESPB</th>
     <th>Izborni/Obavezni</th>
     <th>Brisi</th>
+    <th>Izmeni</th>
    
   </tr>
   <tr *ngFor="let subject of objekat">
@@ -45,6 +46,7 @@
       <td>{{subject.espb}}</td>
       <td>{{subject.is_mandatory}}</td>
       <td><button class="btn btn-sm btn-outline-danger" (click)="deleteRow(subject.id_course)">Delete</button></td> 
+      <td><button class="btn btn-sm btn-outline-info" (click)="updateRow(subject.id_course)">Update</button></td>
   </tr>
 
 
@@ -52,7 +54,7 @@
 
   
 </table>
-<button class="btn btn-warning" routerLink="/insert-forma" style="width: 20%; margin-left:40%">+ UNESI PREDMET</button>
+<button class="btn btn-warning" routerLink="/insert-forma" style="width: 20%; margin-left:40%">UNESI PREDMET</button>
 </div>
 
 </body>

@@ -9,8 +9,8 @@ import { UserdashboardComponent } from './userdashboard/userdashboard.component'
 import { UpdateComponent } from './update/update.component';
 import { ProfileComponent } from './profile/profile.component';
 import { InformacioneTehnologijeComponent } from './informacione-tehnologije/informacione-tehnologije.component';
-import { MehatronikaComponent } from './mehatronika/mehatronika.component';
 import { InsertFormaComponent } from './insert-forma/insert-forma.component';
+import { InformacioneUpdateComponent } from './informacione-update/informacione-update.component';
 
 
 export const routes: Routes = [
@@ -24,8 +24,8 @@ export const routes: Routes = [
 {path: 'update/:id', component: UpdateComponent, canActivate: [AuthGuard]},
 {path: 'profile', component: ProfileComponent},
 {path: 'informacione-tehnologije', component: InformacioneTehnologijeComponent},
-{path: 'mehatronika', component:MehatronikaComponent},
 {path: 'insert-forma', component: InsertFormaComponent},
+{path: 'informacione-update/:id', component: InformacioneUpdateComponent},
 {path: '**', pathMatch: 'full', redirectTo: 'home'},
 
 ];

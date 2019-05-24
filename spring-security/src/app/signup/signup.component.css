@@ -22,3 +22,6 @@ input[type=text] {
     height: 40px;
     width: 50%; margin-left:25%
   }
+.text-danger{
+  margin-left:35%
+}

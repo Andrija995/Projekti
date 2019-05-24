@@ -16,12 +16,11 @@ import {FormsModule} from '@angular/forms';
 import {UserService} from './user.service';
 import {HttpClientModule} from '@angular/common/http';
 import { AuthGuard } from 'auth.guard';
-import { from } from 'rxjs';
 import { UpdateComponent } from './update/update.component';
 import { ProfileComponent } from './profile/profile.component';
 import { InformacioneTehnologijeComponent } from './informacione-tehnologije/informacione-tehnologije.component';
-import { MehatronikaComponent } from './mehatronika/mehatronika.component';
 import { InsertFormaComponent } from './insert-forma/insert-forma.component';
+import { InformacioneUpdateComponent } from './informacione-update/informacione-update.component';
 
 
 @NgModule({
@@ -35,8 +34,8 @@ import { InsertFormaComponent } from './insert-forma/insert-forma.component';
     UpdateComponent,
     ProfileComponent,
     InformacioneTehnologijeComponent,
-    MehatronikaComponent,
     InsertFormaComponent,
+    InformacioneUpdateComponent,
    
   ],
   imports: [
