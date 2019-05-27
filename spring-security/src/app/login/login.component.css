@@ -15,6 +15,28 @@ input[type=text] {
     width: 50%; 
     margin-left:25%
   }
+ 
+  input[type=email] {
+    border: 2px solid rgb(10, 53, 53);
+    border-radius: 15px;
+    width: 50%;
+    height: 40px;
+    width: 50%; 
+    margin-left:25%
+  }
+  .text-danger{
+    margin-left: 30%
+  }
+  input[type=password] {
+    border: 2px solid rgb(10, 53, 53);
+    border-radius: 15px;
+    width: 50%;
+    height: 40px;
+    width: 50%; 
+    margin-left:25%
+  }
   .mala{
-    margin-left:30%
+    text-align: center;
+    margin-left: 35%
+
   }

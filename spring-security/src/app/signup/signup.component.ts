@@ -25,6 +25,7 @@ export class SignupComponent implements OnInit {
       if(response){
         console.log(response);
         userForm.reset();
+        alert("Uspesno ste se registrovali!");
       }
     })
   }

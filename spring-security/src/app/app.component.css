@@ -16,5 +16,9 @@
  
 }
 
-  
+.mapa{
+    border: 2px solid cyan;
+    text-align:center;
+    margin-top: 50%
+  }
   

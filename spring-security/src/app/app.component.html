@@ -1,29 +1,45 @@
 
 
-<div class="container-fluid">
-
+<div class="container">
 <nav id="nav" class="navbar navbar-expand-md bg-info navbar-dark sticky-top">
   <a class="navbar-brand" href="#">DoolooApp</a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
     <span class="navbar-toggler-icon"></span>
+    
   </button>
   
   
   <div id="navb" class="navbar-collapse collapse hide">
+    
+      <a class="navbar-brand" href="#" style="max-width: 3%;">
+          <img src="https://cdnaws.recis.io/i/img/00/59/25/57_f02ff9.png" class="img-fluid">
+       </a>
+
+     
+
     <ul class="navbar-nav">
-     
-     
+       
     </ul>
 
     <ul class="nav navbar-nav ml-auto">
-        <li class="logovankorisnik">{{userName}}</li>
-      
-
+       
+     
+        <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Studijski program
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" routerLink="/informacione-tehnologije">Informacione tehnologije</a>
+             
+            
+            </div>
+          </div>
 
         <div class="btn-group">
             <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Profile
               </button>
+              
      <div class=dropdown-menu>
         <a class="dropdown-item" routerLink="/profile" ><span class="fas fa-user"></span>Profile</a>
         <a class="dropdown-item" href="javascript:void(0)" [routerLink]="['/signup']" routerLinkActive *ngIf="!currentStatus.status"><span class="fas fa-user"></span> Sign Up</a>
@@ -36,22 +52,15 @@
 
      </div>
     </div>
+    <small class="logovankorisnik">{{userName}}</small>
+   
 
      
          
        
 
    
-        <div class="btn-group">
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Studijski program
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" routerLink="/informacione-tehnologije">Informacione tehnologije</a>
-             
-            
-            </div>
-          </div>
+        
  
     </ul>
   </div>
@@ -60,8 +69,13 @@
   
 
 </nav>
+<p class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.012209811192!2d20.34264495131976!3d43.8970138445454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4757721aaff632bd%3A0xbddc942f15d8696d!2sFakultet+tehni%C4%8Dkih+nauka+u+%C4%8Ca%C4%8Dku!5e0!3m2!1ssr!2srs!4v1558702112431!5m2!1ssr!2srs" width="750" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+
 
 </div>
+
+
+
 
 
 
